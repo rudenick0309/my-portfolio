@@ -56,7 +56,7 @@ class App extends React.Component {
     const { contents, index } = this.state; //서버 구동되면 이미지 다시 넣을 것
     return (
       <div>
-        {/* <Audio /> */}
+        <Audio />
         <img class="header-image" src="/header-image.png" alt="a" />
         <div>
           {/* 메인 첫 화면이자, 버튼 이벤트들의 결과가 렌더링 되는 곳 */}
