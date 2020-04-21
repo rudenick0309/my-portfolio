@@ -1,7 +1,7 @@
 import React from "react";
 
-function Explain() {
-  return <div>dfedf</div>;
+function Explain({ contents }) {
+  return <div>{contents}</div>;
 }
 
 export default Explain;
