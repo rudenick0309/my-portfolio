@@ -11,15 +11,20 @@ class App extends React.Component {
     //위 screen[인덱스]를 count로 구현하면은? 그니까, count로 인덱스를 줘버리면?
   };
 
-  handleExplainEvent = async () => {
-    this.setState({
-      index: "Explain",
-    });
-    const { index } = this.state;
-    console.log({ index });
-    if ({ index } === "Explain") {
-      await console.log("맞습니다");
-    }
+  handleExplainEvent = () => {
+    this.setState(
+      () => ({
+        index: "Explain",
+      }),
+      () => {
+        const { index } = this.state;
+        if ({ index } !== "main")
+          console.log("조건문의 로직이 정상 출력되었습니다");
+      }
+    );
+    // if ({ index } === "Explain") {
+    //   console.log("맞습니다");
+    // }
   };
 
   render() {
